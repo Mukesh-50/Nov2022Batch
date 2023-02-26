@@ -6,8 +6,8 @@
       <class name="testcases.LoginTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginToApplication" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="verifyUserLandToLoginPageTest"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
     </classes>

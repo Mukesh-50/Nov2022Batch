@@ -73,6 +73,18 @@ public class Utility {
 
 		return element;
 	}
+	
+	public static WebElement waitForElementToBeVisible(WebDriver driver, By webElement, Duration seconds) {
+		WebDriverWait wait = new WebDriverWait(driver, seconds);
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(webElement));
+		return element;
+	}
+	
+	public static WebElement waitTillElementToBeClickable(WebDriver driver,By locator, Duration seconds) {
+		WebDriverWait wait = new WebDriverWait(driver, seconds);
+		WebElement element =wait.until(ExpectedConditions.elementToBeClickable(locator));
+		return element;
+	}
 
 
 

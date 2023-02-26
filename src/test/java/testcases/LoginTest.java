@@ -45,5 +45,14 @@ public class LoginTest extends BaseClass {
 		driver.findElement(By.xpath("")).sendKeys(System.getProperty("user.dir")+"/TestData/thumnail.png");
 
 	}
+	
+	@Test(priority = 4)
+	public void verifyUserLandToLoginPageTest() throws Throwable {
+		login = new LoginPage(driver);
+		
+		System.out.println(("Click on side nav bar and click on login"));
+		Assert.assertEquals(login.verifyUserLandToLoginPage(), "https://freelance-learn-automation.vercel.app/login");
+
+	}
 
 }
