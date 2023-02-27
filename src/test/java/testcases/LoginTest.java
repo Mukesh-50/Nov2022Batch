@@ -41,8 +41,6 @@ public class LoginTest extends BaseClass {
 		home.signOutFromApplication();
 
 		Assert.assertTrue(driver.findElement(By.xpath("//h2[normalize-space()='Sign In']")).isDisplayed());
-		
-		driver.findElement(By.xpath("")).sendKeys(System.getProperty("user.dir")+"/TestData/thumnail.png");
 
 	}
 
