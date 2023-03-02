@@ -34,7 +34,12 @@ public class LoginPage {
 		
 		driver.findElement(password).sendKeys(pass);
 		
-		driver.findElement(loginButton).click();
+		
+		Utility.clickOnElement(driver, loginButton);
+		
+		//driver.findElement(loginButton).click();
+		
+		
 		
 		Dashboard dash=new Dashboard(driver);
 		
