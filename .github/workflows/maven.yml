@@ -17,4 +17,4 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
     - name: Build with Maven
-      run: mvn clean test -DxmlFiles=Smoke.xml -DBrowser=Chrome -DURL=https://freelance-learn-automation.vercel.app
+      run: mvn clean test -DxmlFiles=testng.xml -DBrowser=Chrome -DURL=https://freelance-learn-automation.vercel.app
