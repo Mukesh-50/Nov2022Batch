@@ -28,6 +28,7 @@ public class BrowserFactory {
 			
 			ChromeOptions opt=new ChromeOptions();
 			opt.setHeadless(true);
+			opt.addArguments("--no-sandbox");
 			
 			driver = new ChromeDriver(opt);
 		} else if (browserName.equalsIgnoreCase("Firefox")) {
