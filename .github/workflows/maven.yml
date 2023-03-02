@@ -1,0 +1,20 @@
+name: SeleniumAutomatedTest
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+  SmokeTest:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+    - name: Build with Maven
+      run: mvn clean test -DxmlFiles=Smoke.xml -DBrowser=Chrome -DURL=https://freelance-learn-automation.vercel.app
