@@ -14,5 +14,10 @@ public class SampleTest {
 		
 	}
 	
+	public void vivek_test1()
+	{
 	
+		System.out.println("Vivek Test 1 Executed");
+		
+	}
 }
